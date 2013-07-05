@@ -325,7 +325,7 @@
 			li{
 				float:left;
 				position:relative;
-				@include px-margin-lr(0.5,0.5);
+				@include px-margin-lr(0.4,0.4);
 				@include font-dimensions(14,2,0);
 			}
 		}
