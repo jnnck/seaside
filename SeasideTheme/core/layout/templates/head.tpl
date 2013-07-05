@@ -16,6 +16,10 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed" />
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
 
 	<!-- About this document -->
 	<meta name="description" content="">
