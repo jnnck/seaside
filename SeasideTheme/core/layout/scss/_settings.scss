@@ -1,0 +1,56 @@
+//
+//	Chopstick settings
+//
+
+// Typography
+
+$basefont 				: 'Open Sans', Helvetica, Arial, sans-serif;
+$basefontserif			: Georgia, serif;
+$basefontsize 			: 16;
+$importantnumber        : 44;
+$basefontweight			: 300;
+$baselineheight 		: 1.5;
+$baseheadingfont 		: 'poiret-one';
+$baseheadingfontweight 	: normal;
+
+// Grid
+
+$contextGridGutter	: 60;
+$contextGridColumn	: 40;
+$contextGridColumns	: 12;
+
+// Breakpoints calculated in em's
+
+$bp1: #{320 / $basefontsize}em;
+$bp2: #{480 / $basefontsize}em;
+$bp3: #{680 / $basefontsize}em;
+$bp4: #{960 / $basefontsize}em;
+
+// the last breakpoint is calculated in mixins/_grid.scss
+// $bp5: #{1200 / $basefontsize}em;
+
+// Modular scale settings
+
+$ratio: 1.5;
+$increment: 1;
+$base-size: $basefontsize/16*1em $importantnumber/16*1em;
+
+// Roundness
+
+$radius: 3px;
+
+// Colors
+
+$whitecolor 	: #fff;
+$darkcolor 		: #3c3c3c;
+$mediumcolor 	: #ccc;
+
+$primarycolor 	: #1fbe9e;
+$secondarycolor	: #ff1e53;
+
+// Links
+
+$linkcolor 		    : $primarycolor;
+$linkcolorhover 	: $secondarycolor;
+$linkcolorfocus 	: darken($secondarycolor, 10);
+$linkcolorvisited   : darken($linkcolor, 5);

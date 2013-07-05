@@ -1,0 +1,112 @@
+/*
+	module: main
+*/
+
+.blogpostinfo{
+	@include font-dimensions(10,.5,0);
+}
+
+.blogpostinfo2{
+	@include font-dimensions(16,1,0);
+	time{
+		@include font-dimensions(16,1,0);
+	}
+}
+
+.nomargin{
+	margin-bottom:0;
+}
+
+.logo a {
+	color:$whitecolor;
+	&:hover{
+		color: $whitecolor;
+		text-decoration: none;
+	}
+}
+
+.margin{
+	display:block;
+	margin-bottom:1.5em;
+}
+
+.sidebar section{
+	margin-bottom:1em;
+	&.mod{
+		background-color: darken($whitecolor, 5);
+		@include border-radius($radius, $radius);
+		padding:  1em 1em;
+
+		
+	}
+	ul{
+		margin-top:0.5em;
+		margin-bottom: 0;
+	}
+
+	p:last-child{
+		margin-bottom: 0;
+	}
+}
+
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.ft{
+	overflow:hidden;
+}
+
+#subpagesBlocks{
+	.subpagesBlock{
+		margin-bottom: 1em;
+	}
+}
+
+/* media queries
+------------------------------------------ */
+
+@media only screen and (min-width: $bp2) {
+
+	.main-col-4 {
+		@include box-(12,1,1);
+	}
+
+	.main-col-12 {
+		@include box-(12,1,1);
+	}
+	.main-col-6 {
+		@include box-(6,1,1);
+	}
+
+	.main-content, .main-col-8 {
+		@include box-(12,1,1);
+	}
+
+}
+
+@media only screen and (min-width: $bp4) {
+	.main-col-6 {
+		@include box-(6,1,1);
+	}
+
+	.main-col-4 {
+		@include box-(4,1,1);
+	}
+
+	.main-col-12 {
+		@include box-(12,1,1);
+	}
+
+	.main-content, .main-col-8 {
+		@include box-(8,1,1);
+	}
+
+
+
+}

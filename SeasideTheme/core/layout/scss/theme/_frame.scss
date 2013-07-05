@@ -1,0 +1,392 @@
+/*
+	Frame
+	*/
+
+	.holder {
+		@include padding-tb(1,0);
+	}
+
+	.main-holder{
+		background-color: $whitecolor;
+		color: $darkcolor;
+	}
+
+	.footer-holder{
+		background-color: $primarycolor;
+		color: $whitecolor;
+	}
+
+	.header-holder, .intro-holder{
+		background-color: $darkcolor;
+		color: $whitecolor;
+	}
+
+	.mainside{
+		text-align:center;
+	}
+
+	.header-holder{
+		padding-top:1em;
+	}
+
+
+	.row {
+		@extend %clearfix;
+		margin: 0 auto;
+		max-width: 36em;
+		@include em-padding-lr(.5,.5);
+
+		.row {
+			padding: 0;
+		}
+
+	}
+
+	.failwhale{
+		max-width:200px;
+	}
+
+	.content > p:last-child{
+		margin-bottom: 0;
+	}
+
+	#blogIndex article, .inner .bd{
+		margin-bottom: 1.5em;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.langselect{
+		ul{
+
+			li{
+				float: right;
+				margin-left: 0.5em;
+				a{
+					color: $whitecolor;
+					&:hover{
+						color: $whitecolor;
+						text-decoration: none;
+					}
+				}
+				&.selected{
+					a{
+						color: $whitecolor;
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+	}
+
+/*
+	Header
+	*/
+
+	.logo {
+		float: left;
+		color: $whitecolor;
+		margin: 0;
+		a{
+			border-bottom: none;
+		}
+	}
+
+	.home .header-holder .inner{
+		border-bottom: 1px dotted lighten($darkcolor,20);
+	}
+
+	.header .inner {
+
+		@extend %clearfix;
+	// @include padding-bottom(1);
+}
+
+.main-nav {
+
+	float: left;
+	width: 100%;
+
+	ul {
+		font-family: $basefont;
+		padding-top:10px;
+		@include list-nav;
+		@include font-dimensions(16,1.5,1);
+		@extend %clearfix;
+	}
+
+	a {
+		color: lighten($darkcolor,50);
+		text-decoration: none;
+		font-weight: 400;
+		border-bottom: none;
+	}
+
+	a:hover,
+	.selected a {
+		color: darken($primarycolor,0);
+	}
+
+	li:before {
+    content: "";
+    color: $primarycolor; /* or whatever color you prefer */
+}
+
+}
+
+.langselect {
+
+	float: left;
+	width: 100%;
+
+	ul {
+		font-family: $basefont;
+		@include list-nav;
+		//@include font-dimensions(16,1.5,1);
+		@extend %clearfix;
+	}
+
+	a {
+		color: lighten($darkcolor,50);
+		text-decoration: none;
+		font-weight: 400;
+	}
+
+	a:hover,
+	.selected a {
+		color: darken($primarycolor,0);
+		text-decoration: none;
+		border-bottom: 1px dotted $whitecolor;
+	}
+
+}
+
+
+
+.mobile-nav .main-nav {
+	display: none;
+}
+
+.main-nav-trigger {
+	display: block;
+	float: right;
+	width: 2.1em;
+	height: 2.1em;
+	text-indent: -9999px;
+	@include font-dimensions(16,1,1);
+	@include svg-bg("../images/icon-menu", ".png", $darkcolor, 50%, no-repeat);
+}
+
+.svg .trigger-active,
+.trigger-active {
+	background-color: $linkcolor;
+}
+
+/*
+	Footer
+	*/
+	@media only screen and (max-width: $bp2) {
+		.sidebar section:first-child{
+			margin-top: 1em;
+		}
+		footer.footer-holder p{
+			text-align: center;
+		}
+
+		.langselect,{
+			width: auto;
+			float:right;
+			position:relative;
+			left:-50%;
+			text-align:left;
+			margin-bottom: 1em;
+
+			ul{ 
+				position:relative;
+				left:50%;
+
+				li{
+					float:left;
+					position:relative;
+
+					&:first-child{
+						padding:0;
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-holder {
+		@include padding-top(1);
+	}
+
+	footer ul{
+		margin-bottom: 0;
+	}
+
+
+/* media queries
+------------------------------------------ */
+
+@media only screen and (min-width: $bp1) {
+	.header-holder{
+		padding-top:1em;
+	}
+}
+
+@media only screen and (min-width: $bp2) {
+	.logo {
+		width:auto;
+	}
+
+
+
+	.h1 {
+		@include font-dimensions(60,1.75,1);
+	}
+	
+
+	.row {
+		padding: 0;
+
+		.row {
+			@include px-margin-lr(-1,-1);
+		}
+
+	}
+
+	.header,
+	.footer,
+	.doormat-col-4 {
+		@include box-(12,1,1);
+	}
+
+}
+
+
+
+@media only screen and (min-width: $bp3) {
+	.mainside{
+		padding-top: 1em;
+	}
+
+	
+
+	.header-holder {
+		@include padding-top(0);
+
+		.inner {
+			@include padding-tb(1,1);
+		}
+
+	}
+
+	.mobile-nav .main-nav,
+	.main-nav, 
+	{
+		display: block !important;
+		width: auto;
+		float: right;
+
+		ul {
+			@include horizontal-nav();
+			@include font-dimensions(16,2,0);
+		}
+
+	}
+
+	.main-nav-trigger {
+		display: none;
+	}
+
+	
+
+}
+@media only screen and (min-width: $bp3) and (max-width: $bp4){
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.main-nav,{
+		float:right;
+		position:relative;
+		left:-50%;
+		text-align:left;
+
+		ul{ 
+			position:relative;
+			left:50%;
+
+			li{
+				float:left;
+				position:relative;
+				@include px-margin-lr(0.5,0.5);
+				@include font-dimensions(14,2,0);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $bp4) {
+	.mainside{
+		padding-top: 3em;
+	}
+
+	.mobile-nav .main-nav,
+	.main-nav {
+
+		li {
+			@include px-margin-lr(1,0);
+		}
+
+	}
+
+
+	.failwhale{
+		max-width:100%;
+	}
+
+	.holder {
+		@include padding-tb(1,1);
+	}
+
+	.row {
+		max-width: #{$contextGridWidth}px;
+		// max-width: $bp5; // this is not the same since we increase the font-size at certain breakpoints so the em-value increases too.
+	}
+
+	.header-holder {
+		@include padding-top(0);
+		@include padding-bottom(0);
+
+		.inner {
+			@include padding-tb(1,1);
+		}
+
+	}
+
+	.header {
+		@include box-(12,1,1);
+	}
+
+	.doormat-holder {
+		@include padding-bottom(2);
+	}
+
+	.footer-holder {
+		padding-bottom: 0;
+	}
+
+	.footer {
+		@include box-(12,1,1);
+	}
+
+	.doormat-col-4 {
+		@include box-(4,1,1);
+	}
+}

@@ -1,0 +1,44 @@
+.imageHolder, .commentInfo, .commentText{
+	float:left;
+}
+.commentText{
+	clear:both;
+}
+
+time{
+	@include font-dimensions(12,0.5,1);
+}
+
+.imageHolder{
+	padding-top: 0.5em;
+	margin-right: 1em;
+}
+
+.comment{
+	overflow: hidden;
+	padding-bottom:1.5em;
+}
+
+.commentAuthor{
+	@include font-dimensions(14,1,1);
+	margin-bottom:0;
+}
+
+#blogCommentForm{
+	input[type=text],input[type=email], textarea{
+		width: 100%;
+	}
+
+}
+
+.comment-col-6{
+	@include box-(6,1,1);
+}
+
+#blogRecentCommentsWidget ul li{
+	padding-bottom:0.5em;
+}
+
+#blogIndex article .content{
+	margin-bottom:0.5em;
+}

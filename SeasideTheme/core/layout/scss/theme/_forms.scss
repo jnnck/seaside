@@ -1,0 +1,81 @@
+/*
+	Forms
+	---
+	Object-oriented classes for form-like elements.
+*/
+
+label{
+	display: block;
+    float: left;
+	width: 100px;
+}
+
+textarea {
+	height: 5em;
+}
+
+input.inputText,
+input.inputPassword,
+input.inputSearch,
+input.inputDate {
+	padding: 0 .5em;
+	border: 1px solid $mediumcolor;
+	font-family: $basefont;
+	color: lighten($darkcolor,30);
+	background-color: $whitecolor;
+	-webkit-appearance: none;
+	@include input-dimensions(16,1.5,0,0);
+
+
+	&:focus {
+		color: $darkcolor;
+		outline-color: $primarycolor;
+		border-color: darken($mediumcolor,20);
+	}
+
+}
+
+// buttons
+.socialbutton, .button, .inputSubmit{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+
+
+.socialbutton,{
+	@include social-button-small;
+	@include button-color($primarycolor ,$secondarycolor,  white, false, false, 0, 0.2, 0);
+}
+.socialbutton{
+	padding-top:3px;
+}
+
+.button,
+a.button {
+
+	@include button-small;
+	@include button-color($primarycolor ,$secondarycolor,  white, false, false, 0, 0.2, 0);
+}
+
+.secondaryButton,
+a.secondaryButton {
+	@include button-small;
+	@include button-color($darkcolor, darken($darkcolor,10), white, true, true, .9, .25, .5);
+}
+
+@media only screen and (min-width: $bp3) {
+
+	.button,
+	.socialbutton,
+	a.button,
+	.secondaryButton,
+	a.secondaryButton {
+		//@include button-big;
+		@include button-inlineblock;
+	}
+
+}

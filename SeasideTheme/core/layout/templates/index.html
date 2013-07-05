@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- Mobile settings http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- About this document -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Chopstick: SASS responsive grid system</title>
+
+	<!-- Custom modernizr build: http://modernizr.com — load other JavaScript at the end of document -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="fonts/fonts.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/screen.css">
+
+	<!-- Enable HTML5 in IE<9 -->
+	<!--[if lt IE 9  & (!IEMobile)]><script src="js/html5shiv.js"></script><![endif]-->
+	<link rel="icon" href="/favicon.png">
+	<!--
+		Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
+		Add your font license here, if necessary.
+	-->
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
+	<div class="holder header-holder">
+		<div class="row header-row">
+			<div class="header">
+				<div class="inner">
+					<h1 class="logo">Seaside</h1>
+					<nav class="main-nav">
+						<ul>
+							<li class="selected"><a href="index.html">Home</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="grid.html">Grid</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="holder intro-holder">
+		<section class="row intro-row">
+			<div class="main-content">
+				<div class="inner">
+					<h2>Home</h2>
+					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod.</p>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue.
+</p>
+				</div>
+			</div>
+			<div class="main-col-4">
+				<div class="inner mainside">
+					<img src="img/seaside.png">
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="holder main-holder">
+		<div class="row">
+			<div class="main-col-12">
+				<h2>Latest Blogposts</h2>
+			</div>
+		</div>
+		<div class="row main-row">
+			<div class="main-col-4">
+				<div class="inner">
+					<h3>Opstick, opstick, opstick...</h3>
+					<span class="blogpostinfo">Geschreven door Fork CMS op maandag 1 juli 2013</span>
+					<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+					<p><a href="#" class="button">Read More</a></p>
+				</div>
+			</div>
+			<div class="main-col-4">
+				<div class="inner">
+					<h3>Opstick, opstick, opstick...</h3>
+					<span class="blogpostinfo">Geschreven door Fork CMS op maandag 1 juli 2013</span>
+					<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+					<p><a href="#" class="button">Read More</a></p>
+				</div>
+			</div>
+			<div class="main-col-4">
+				<div class="inner">
+					<h3>Opstick, opstick, opstick...</h3>
+					<span class="blogpostinfo">Geschreven door Fork CMS op maandag 1 juli 2013</span>
+					<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+					<p><a href="#" class="button">Read More</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="holder footer-holder">
+		<div class="row footer-row">
+			<div class="footer">
+				<div class="inner">
+					<p>Copyright MMXIII Chopstick</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Always Load jQuery First -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+
+	<!-- Make responsive website responsive in IE<9 -->
+	<!--[if lt IE 9  & (!IEMobile)]><script src="js/respond.min.js"></script><![endif]-->
+
+	<!-- Theme specific JavaScript. Add your other scripts here -->
+	<script src="js/theme.min.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+		g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+		s.parentNode.insertBefore(g,s)}(document,"script"));
+	</script>
+</body>
+</html>
