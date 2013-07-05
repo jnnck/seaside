@@ -6,3 +6,5 @@ Seaside a theme for Fork CMS
 - SASS
 - Flat
 - Share Buttons
+
+Live demo: [here](http://seaside.jannickvandaele.be)
