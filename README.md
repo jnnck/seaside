@@ -7,4 +7,4 @@ Seaside a theme for Fork CMS
 - Flat
 - Share Buttons
 
-Live demo: [here](http://seaside.jannickvandaele.be)
+Live demo: [here](http://seaside.beursfuif.com/)
