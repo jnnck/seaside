@@ -701,6 +701,7 @@ footer ul {
 
   .mobile-nav .main-nav li,
   .main-nav li {
+    float: left;
     margin-left: 30px;
     margin-right: 0px;
   }

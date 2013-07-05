@@ -342,6 +342,7 @@
 	.main-nav {
 
 		li {
+			float: left;
 			@include px-margin-lr(1,0);
 		}
 
