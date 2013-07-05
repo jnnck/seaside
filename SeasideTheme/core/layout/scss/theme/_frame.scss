@@ -130,7 +130,7 @@
 	}
 
 	li:before {
-    content: "";
+    content: " ";
     color: $primarycolor; /* or whatever color you prefer */
 }
 
@@ -293,7 +293,7 @@
 		float: right;
 
 		ul {
-			@include horizontal-nav();
+			//@include horizontal-nav();
 			@include font-dimensions(16,2,0);
 		}
 
@@ -323,6 +323,7 @@
 			left:50%;
 
 			li{
+				padding:0;
 				float:left;
 				position:relative;
 				@include px-margin-lr(0.4,0.4);

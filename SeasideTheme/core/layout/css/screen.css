@@ -216,7 +216,6 @@ ul {
 
 li {
   padding-left: 1em;
-  text-indent: -.7em;
 }
 
 li:before {
@@ -510,7 +509,7 @@ button:visited {
   color: #1fbe9e;
 }
 .main-nav li:before {
-  content: "";
+  content: " ";
   color: #1fbe9e;
   /* or whatever color you prefer */
 }
@@ -663,13 +662,6 @@ footer ul {
     line-height: 3em;
     margin-bottom: 0em;
   }
-  .mobile-nav .main-nav ul li, .mobile-nav .main-nav ul a,
-  .main-nav ul li,
-  .main-nav ul a {
-    display: block;
-    float: left;
-    zoom: 1;
-  }
 
   .main-nav-trigger {
     display: none;
@@ -692,6 +684,7 @@ footer ul {
     left: 50%;
   }
   .main-nav ul li {
+    padding: 0;
     float: left;
     position: relative;
     margin-left: 12px;
